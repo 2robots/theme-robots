@@ -23,8 +23,6 @@ $break          : 40em;
   .suffix-#{$i} { @include suffix(0); }
 }
 
-.omega { @include omega; }
-
 
 @include at-breakpoint($break) {
   $total-columns: $tc;
@@ -35,4 +33,8 @@ $break          : 40em;
     .prefix-#{$i} { @include prefix($i); }
     .suffix-#{$i} { @include suffix($i); }
   }
+
+  .omega { @include omega; }
 }
+
+.omega { @include omega; }
