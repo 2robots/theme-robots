@@ -1,0 +1,551 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+/* base */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/base/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/base/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/base/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* compass components */
+/* config */
+/* responsive media layouts */
+/* line 15, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.container-12 {
+  *zoom: 1;
+  max-width: 71em;
+  _width: 71em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 71em;
+}
+/* line 38, /Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.container-12:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-1 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-1 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-1 {
+  padding-right: 0%;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-2 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-2 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-2 {
+  padding-right: 0%;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-3 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-3 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-3 {
+  padding-right: 0%;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-4 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-4 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-4 {
+  padding-right: 0%;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-5 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-5 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-5 {
+  padding-right: 0%;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-6 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-6 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-6 {
+  padding-right: 0%;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-7 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-7 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-7 {
+  padding-right: 0%;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-8 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-8 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-8 {
+  padding-right: 0%;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-9 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-9 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-9 {
+  padding-right: 0%;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-10 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-10 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-10 {
+  padding-right: 0%;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-11 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-11 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-11 {
+  padding-right: 0%;
+}
+
+/* line 21, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.grid-12 {
+  width: 100%;
+  float: left;
+  margin-right: 20%;
+  display: inline;
+}
+
+/* line 22, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.prefix-12 {
+  padding-left: 0%;
+}
+
+/* line 23, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.suffix-12 {
+  padding-right: 0%;
+}
+
+/* line 26, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+.omega {
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+}
+
+@media (min-width: 40em) {
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-1 {
+    width: 7.042%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-1 {
+    padding-left: 8.451%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-1 {
+    padding-right: 8.451%;
+  }
+
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-2 {
+    width: 15.493%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-2 {
+    padding-left: 16.901%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-2 {
+    padding-right: 16.901%;
+  }
+
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-3 {
+    width: 23.944%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-3 {
+    padding-left: 25.352%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-3 {
+    padding-right: 25.352%;
+  }
+
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-4 {
+    width: 32.394%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-4 {
+    padding-left: 33.803%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-4 {
+    padding-right: 33.803%;
+  }
+
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-5 {
+    width: 40.845%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-5 {
+    padding-left: 42.254%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-5 {
+    padding-right: 42.254%;
+  }
+
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-6 {
+    width: 49.296%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-6 {
+    padding-left: 50.704%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-6 {
+    padding-right: 50.704%;
+  }
+
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-7 {
+    width: 57.746%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-7 {
+    padding-left: 59.155%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-7 {
+    padding-right: 59.155%;
+  }
+
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-8 {
+    width: 66.197%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-8 {
+    padding-left: 67.606%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-8 {
+    padding-right: 67.606%;
+  }
+
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-9 {
+    width: 74.648%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-9 {
+    padding-left: 76.056%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-9 {
+    padding-right: 76.056%;
+  }
+
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-10 {
+    width: 83.099%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-10 {
+    padding-left: 84.507%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-10 {
+    padding-right: 84.507%;
+  }
+
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-11 {
+    width: 91.549%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-11 {
+    padding-left: 92.958%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-11 {
+    padding-right: 92.958%;
+  }
+
+  /* line 34, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .grid-12 {
+    width: 100%;
+    float: left;
+    margin-right: 1.408%;
+    display: inline;
+  }
+
+  /* line 35, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .prefix-12 {
+    padding-left: 101.408%;
+  }
+
+  /* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/config/_grid.scss */
+  .suffix-12 {
+    padding-right: 101.408%;
+  }
+}
+/* mixins */
+/* @import "sass/mixins/box"; */
+/* @import "sass/mixins/box"; */
+/* line 10, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/base/_defaults.scss */
+p {
+  font-size: 0.8em;
+  line-height: 140%;
+  margin: 20px 0;
+}
+
+/* line 36, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/base/_defaults.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 40, /Users/franzwilding/Sites/pvoe/sites/all/themes/theme_robots/css/sass/base/_defaults.scss */
+ul {
+  list-style: disc;
+}
+
+/*  HEADLINE ELEMENTS */
+/*  INLINE ELEMENTS */
+/* FORMUALR AND USER INPUTS */
+/* modules */
+/*@import "sass/modules/page";*/

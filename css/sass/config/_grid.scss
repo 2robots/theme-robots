@@ -1,0 +1,38 @@
+
+/* responsive media layouts */
+
+$tc: 12;
+$cw: 5em;
+$mw: 71em;
+
+$total-columns  : $tc;
+$column-width   : $cw;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+$break          : 40em;
+
+.container-#{$total-columns} {
+  @include container($total-columns);
+  max-width: $mw;
+}
+
+@for $i from 1 through $total-columns {
+  .grid-#{$i} { @include span-columns(1, 1); }
+  .prefix-#{$i} { @include prefix(0); }
+  .suffix-#{$i} { @include suffix(0); }
+}
+
+.omega { @include omega; }
+
+
+@include at-breakpoint($break) {
+  $total-columns: $tc;
+  $column-width: $cw;
+
+  @for $i from 1 through $total-columns {
+    .grid-#{$i} { @include span-columns($i,$total-columns); }
+    .prefix-#{$i} { @include prefix($i); }
+    .suffix-#{$i} { @include suffix($i); }
+  }
+}

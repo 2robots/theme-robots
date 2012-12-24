@@ -1,0 +1,152 @@
+@import "sass/config/config";
+@import "sass/mixins/mixins";
+
+body {
+}
+
+p, ul, ol, dl, h1, h2, h3, h4, h5, h6, table {
+}
+
+p {
+  font-size: 0.8em;
+  line-height: 140%;
+  margin: 20px 0;
+}
+
+blockquote {
+  p {
+  }
+}
+
+dl {
+  dt {
+  }
+
+  dd {
+  }
+}
+
+ol, ul {
+
+  li {
+
+  }
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+p {
+}
+
+table {
+  thead {
+  }
+
+  tbody {
+  }
+
+  tfoot {
+  }
+
+  tr {
+    td {
+    }
+
+    th {
+    }
+  }
+}
+
+/*  HEADLINE ELEMENTS */
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+hgroup {
+
+  h1, h2, h3, h4, h5, h6 {
+  }
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+
+
+/*  INLINE ELEMENTS */
+a {
+}
+
+img {
+}
+
+abbr {
+}
+
+acronym {
+}
+
+address {
+}
+
+
+/* FORMUALR AND USER INPUTS */
+form {
+
+  legend {
+  }
+
+  p, .form-item, .form-actions {
+  }
+
+  label {
+  }
+
+  button, input, textarea, select, option, textarea {
+
+    &:focus {
+    }
+  }
+
+  button {
+  }
+
+  input {
+  }
+
+  select {
+  }
+
+  option {
+  }
+
+  textarea {
+  }
+}
+
+.field-name-body {
+  img {
+  }
+}
+
