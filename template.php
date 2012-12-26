@@ -31,3 +31,38 @@ function alpha_process_region(&$vars) {
     $vars['attributes'] = str_replace(' region ', ' region omega ', $vars['attributes']);
   }
 }
+
+/**
+ * Implements hook_process_region().
+ */
+/*function theme_robots_alpha_process_region(&$vars) {
+
+  // display logo, ... at the right region.
+  if (in_array($vars['elements']['#region'],
+    array('content'))
+  ) {
+    $theme = alpha_get_theme();
+
+    switch ($vars['elements']['#region']) {
+      case 'content':
+        break;
+    }
+  }
+}*/
+
+/**
+ * Implements hook_process_zone().
+ */
+/*function theme_robots_alpha_process_zone(&$vars) {
+
+  if (in_array($vars['elements']['#zone'],
+    array('content')
+  )) {
+    $theme = alpha_get_theme();
+
+    switch ($vars['elements']['#zone']) {
+      case 'content':
+        break;
+    }
+  }
+}*/
